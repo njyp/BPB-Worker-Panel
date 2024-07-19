@@ -204,6 +204,7 @@ export default {
                         url.protocol = 'https:';
                         request = new Request(url, request);
                         return await fetch(request);
+				
                 }
             } else {
                 return await vlessOverWSHandler(request);
